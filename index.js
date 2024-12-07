@@ -28,7 +28,9 @@ app.get('/',(req,res)=>{
 app.get('/api/jokes',(req,res)=>{
     res.send(jokes);
 });
-
+app.get('/api/login',(req,res)=>{
+    res.send("<script>alert('login')</script>");
+})
 app.listen(process.env.PORT,()=>{
     console.log(`App is listening on http://localhost:${port}`);
 })
